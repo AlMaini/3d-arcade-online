@@ -1,0 +1,5 @@
+node_modules
+mvsc.zip
+dist
+
+.DS_Store

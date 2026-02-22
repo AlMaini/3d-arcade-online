@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Arcade Online</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #000;
+        overflow: hidden;
+        font-family: 'Courier New', monospace;
+      }
+
+      #app {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      #emulator-container {
+        visibility: hidden;
+        position: absolute;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        width: 384px;
+        height: 224px;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="emulator-container"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
